@@ -1,0 +1,27 @@
+.panel-stats-indicator {
+    spacing: 10px;
+}
+
+.panel-stats-value {
+    font-family: monospace;
+    font-feature-settings: "tnum";
+    font-size: 0.9em;
+}
+
+.panel-stats-header {
+    font-weight: bold;
+}
+
+.panel-stats-row {
+    spacing: 24px;
+}
+
+.panel-stats-row-value,
+.panel-stats-cores {
+    font-family: monospace;
+    font-feature-settings: "tnum";
+}
+
+.panel-stats-cores {
+    font-size: 0.85em;
+}

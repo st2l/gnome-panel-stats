@@ -1,0 +1,11 @@
+{
+  "uuid": "panel-stats@st2l.github.io",
+  "name": "Panel Stats",
+  "description": "Shows CPU, memory, network, disk and temperature usage in the left part of the top panel, next to Activities. Click the indicator for detailed per-core, per-interface and per-device statistics. No libgtop dependency - all data is read from /proc and /sys.",
+  "shell-version": ["48", "49", "50", "51"],
+  "settings-schema": "org.gnome.shell.extensions.panel-stats",
+  "gettext-domain": "panel-stats",
+  "url": "https://github.com/st2l/gnome-panel-stats",
+  "version": 1,
+  "version-name": "1.0.0"
+}

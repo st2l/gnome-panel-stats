@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.panel-stats"
+          path="/org/gnome/shell/extensions/panel-stats/">
+    <key name="show-cpu" type="b">
+      <default>true</default>
+      <summary>Show CPU load</summary>
+      <description>Show the total processor load as a percentage in the panel.</description>
+    </key>
+    <key name="show-memory" type="b">
+      <default>true</default>
+      <summary>Show memory usage</summary>
+      <description>Show used RAM as a percentage in the panel.</description>
+    </key>
+    <key name="show-network" type="b">
+      <default>true</default>
+      <summary>Show network speed</summary>
+      <description>Show download and upload rate of the physical interfaces in the panel.</description>
+    </key>
+    <key name="show-disk" type="b">
+      <default>false</default>
+      <summary>Show disk usage</summary>
+      <description>Show used space of the root filesystem as a percentage in the panel.</description>
+    </key>
+    <key name="show-temperature" type="b">
+      <default>false</default>
+      <summary>Show CPU temperature</summary>
+      <description>Show the processor temperature in degrees Celsius in the panel.</description>
+    </key>
+    <key name="show-labels" type="b">
+      <default>true</default>
+      <summary>Show text labels</summary>
+      <description>Prefix every value with a short label such as CPU or RAM.</description>
+    </key>
+    <key name="refresh-interval" type="d">
+      <default>2.0</default>
+      <range min="0.5" max="30.0"/>
+      <summary>Refresh interval</summary>
+      <description>Seconds between two samples.</description>
+    </key>
+    <key name="panel-position" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <default>"left"</default>
+      <summary>Panel box</summary>
+      <description>Which box of the top panel holds the indicator.</description>
+    </key>
+    <key name="panel-index" type="i">
+      <default>1</default>
+      <range min="0" max="20"/>
+      <summary>Position inside the box</summary>
+      <description>Index of the indicator inside the chosen panel box. 1 places it right after the Activities button.</description>
+    </key>
+  </schema>
+</schemalist>
